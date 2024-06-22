@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* لون خلفية الموقع */
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* توجيه النص للغات اليمينية */
+}
+
+header {
+    background-color: #333; /* لون خلفية الهيدر */
+    padding: 20px 0; /* هوامش الهيدر */
+    text-align: center; /* محاذاة النص بالوسط */
+    direction: ltr; /* توجيه النص للغات اليسارية */
+}
+
+.logo {
+    font-size: 120px; /* حجم الخط الكبير */
+    font-weight: bold; /* سمك الخط */
+    color: #fff; /* لون الخط (أبيض) */
+    margin: 0; /* إزالة هامش الخط */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+}
+
+.logo-container {
+    display: flex; /* استخدام تخطيط flex لترتيب العناصر */
+    justify-content: space-between; /* توزيع العناصر بالتساوي مع مسافات بينها */
+    align-items: center; /* محاذاة العناصر بالوسط رأسياً */
+    margin-top: 20px; /* هامش أعلى المربع */
+    padding: 0 20px; /* هامش داخلي للتباعد بين العناصر */
+}
+
+.logo-image {
+    width: 500px;
+    height: 500px;
+    display: block; /* عرض الصورة كملف مفتوح */
+    border: 2px solid #333; /* حدود رفيعة حول الصورة */
+    border-radius: 5px; /* تدوير حواف الصورة */
+    transition: transform 0.3s ease; /* تأثير الانتقال لخاصية transform */
+}
+
+.image-with-caption:hover .logo-image {
+    transform: scale(1.1); /* تكبير الصورة عند تحويل الماوس عليها */
+}
+
+.caption {
+    text-align: center; /* محاذاة النص بالوسط */
+    font-weight: bold; /* سمك الخط */
+    margin-top: 10px; /* هامش أعلى الكلمة */
+    direction: ltr; /* توجيه النص للغات اليسارية */
+}
+
+.return-button {
+    position: fixed; /* تحديد موضع ثابت */
+    top: 20px; /* تحديد المسافة من الأعلى */
+    right: 20px; /* تحديد المسافة من اليمين */
+    background-color: #333; /* لون خلفية الزر */
+    color: #fff; /* لون النص */
+    padding: 10px 20px; /* هوامش داخلية */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير حواف الزر */
+    cursor: pointer; /* تغيير شكل المؤشر عند التحويل */
+    transition: background-color 0.3s ease; /* تأثير الانتقال لخاصية background-color */
+}
+
+.return-button:hover {
+    background-color: #555; /* لون خلفية الزر عند التحويل */
+}
+
+.return-button::before {
+    content: "\2190"; /* رمز السهم الذي يشير إلى اليسار */
+    margin-right: 5px; /* هامش من اليمين */
+}
